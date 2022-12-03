@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('gender');
             $table->string("fcm_token")->nullable();
+            $table->date('dob');
             $table->string('photo')->nullable();
             $table->string('google_auth')->unique()->nullable();
             $table->bigInteger('diamonds')->default(0);
