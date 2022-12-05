@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string("fcm_token")->nullable();
             $table->string('photo')->nullable();
-            $table->integer('roleId');
+            $table->integer('roleId')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
