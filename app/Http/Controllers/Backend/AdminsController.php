@@ -20,6 +20,7 @@ class AdminsController extends Controller
             return $next($request);
         });
         $this->middleware('auth:admin'); 
+            
     }
 
     /**
