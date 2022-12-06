@@ -19,7 +19,7 @@ class AdminsController extends Controller
             $this->user = Auth::guard('admin')->user();
             return $next($request);
         });
-        $this->middleware('auth:admin');
+        $this->middleware('auth:admin'); 
     }
 
     /**
