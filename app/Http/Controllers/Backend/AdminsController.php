@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Hash; 
 use Spatie\Permission\Models\Role;
 
 class AdminsController extends Controller
@@ -20,7 +20,6 @@ class AdminsController extends Controller
             return $next($request);
         });
         $this->middleware('auth:admin'); 
-            
     }
 
     /**

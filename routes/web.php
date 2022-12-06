@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,10 +41,13 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/password/reset', 'App\Http\Controllers\Backend\Auth\ForgetPasswordController@showLinkRequestForm')->name('admin.password.request');
     Route::post('/password/reset/submit', 'App\Http\Controllers\Backend\Auth\ForgetPasswordController@reset')->name('admin.password.update');
 
-   Route::get('/basic-controls', 'Admin\BasicController@index')->name('basic-controls');
-        Route::post('/basic-controls', 'Admin\BasicController@updateConfigure')->name('basic-controls.update');
+
+    Route::resource('websetting', 'App\Http\Controllers\Backend\WebSettingController', ['names' => 'websetting']);
+  
+    Route::post('/websetting/{id}/update', 'App\Http\Controllers\Backend\WebSettingController@update')->name('websetting.update');
+
 
 });
-
+ 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

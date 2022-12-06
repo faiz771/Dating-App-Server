@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class BasicControlModel extends Model
+class WebSetting extends Model
 {
     use HasFactory;
-    protected $table='settings';
 
- 
-
+    protected $fillable=['dashboard_icon' , 'dashboard_fav_icon' , 'name'];
 }
