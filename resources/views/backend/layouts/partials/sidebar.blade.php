@@ -60,23 +60,19 @@
                     @endif
 
 
-                    @if ($usr->can('basic_controls.create')  )
+            
                     <li>
                         <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-user"></i><span>
-                            Admins
+                            Basic control
                         </span></a>
-                        <ul class="collapse {{ Route::is('basic_controls.admins.create') || Route::is('basic_controls.admins.index') || Route::is('basic_controls.admins.edit') || Route::is('basic_controls.admins.show') ? 'in' : '' }}">
-                            
-                            @if ($usr->can('admin.view'))
-                                <li class="{{ Route::is('basic_controls.admins.index')  || Route::is('basic_controls.admins.edit') ? 'active' : '' }}"><a href="{{ route('basic_controls.admins.index') }}">All Admins</a></li>
-                            @endif
+                        <ul class="collapse {{ Route::is('websetting.index') }}">
+                      
+                            <li class="{{ Route::is('websetting.index') }}"><a href="{{ route('websetting.index') }}">Basic Control</a></li>
+              
 
-                            @if ($usr->can('admin.create'))
-                                <li class="{{ Route::is('basic_controls.admins.create')  ? 'active' : '' }}"><a href="{{ route('basic_controls.admins.create') }}">Create Admin</a></li>
-                            @endif
                         </ul>
                     </li>
-                    @endif
+              
 
                 </ul>
             </nav>
