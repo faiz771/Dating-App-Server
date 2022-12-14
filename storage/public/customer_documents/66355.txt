@@ -1,0 +1,50 @@
+Number validation lagegi forms main b or pure system main.
+
+SSN or ITIN main sirf 1 he enter hoga validation lagegi.
+
+email validation lagegi her jaga.
+
+form submit krwane pr fed page arha h agr ghlt email bar bar enter krha hn toh.
+
+members sirf 4 add hnge.
+
+cpmany main 2 company add hoskti hai. 2nd optional hogi. yahn b validaton lagegi.
+
+user panel main documents main view kaam nhe krha.
+
+balance sheet update nhe horhi. na sales update horhi h.
+
+employee add kiya hai or jb usko login krha hn toh dashboard he khrb show horha hai.
+
+permissions main issue arha h.
+
+employee add krne k baad manage expesnse k page pr lekr jarha h.
+
+manage customer main back ka button work nhe krha.
+
+customer ki personal information show nhe horhi jo usne form fill krte wakt submit krwai h.
+
+
+(new bugs)
+
+
+manage order pr fed page arha h.
+
+manage coupon pr fed page hai.
+
+TM main company name jo b fill kr rhe hain woh orange line mai aega.
+
+TM main State (required for US Applicants) and website walli field main OPTIONAL mentioned hoga.
+
+number validationns nhe hain TM main or zip code pr number ki validation lagegi text b submit horha h,
+
+number validation on LLC, postal code pe number ki field lagegi.
+
+LLC main validation lagegi ya toh SSN fill kre ya toh ITIN.
+ 
+customer ki personal information show nhe horhi jo usne form fill krte wakt TM ka.
+
+user panel main documents main view kaam nhe krha.
+
+
+
